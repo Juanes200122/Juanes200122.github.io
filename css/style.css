@@ -1,0 +1,490 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
+/*colors para el modo oscuro*/
+/*Variables del tema light*/
+:root {
+  --main-color: #1083D6;
+  --title-color: #2A3B47;
+  --text-color: #697477;
+  --light-text-color: #A0A7AC;
+  --border-color: #EFF3F5;
+  --container-color: #FFFFFF;
+  --body-color: #FBFBFE;
+}
+
+body.dark-theme {
+  --main-color: #52A5E0;
+  --title-color: #EFF3F5;
+  --text-color: #C8CDD0;
+  --light-text-color: #A0A7AC;
+  --border-color: #2A3B47;
+  --container-color: #212E36;
+  --body-color: #192229;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  background-color: #192229;
+}
+
+a,
+h2,
+p,
+h3,
+h4,
+h5,
+span {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.main__container_masterTODO {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /*Contendio skills portafolio*/
+  /*Contendio portafolio*/
+  /*Contendio footer portafolio*/
+}
+.main__container_masterTODO .Container_Cubierta {
+  width: 100%;
+  max-width: 2000px;
+  height: 100vh;
+  max-height: 1000px;
+  /*Contendio sobremi portafolio*/
+  /*Contendio mi_inform portafolio*/
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #192229;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .navbar h2 {
+  margin-left: 5%;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .navbar h2 span {
+  color: rgb(0, 225, 255);
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .navbar .bars {
+  width: 40px;
+  height: 40px;
+  background-color: #28373f;
+  border-radius: 10px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  display: none;
+  margin-right: 20px;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .navbar .bars:hover {
+  background-color: #28373f;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .navbar .bars .line {
+  width: 30px;
+  height: 3px;
+  background-color: #52A5E0;
+  border-radius: 10px;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .nav-bar {
+  width: 100%;
+  display: flex;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .nav-bar .styles_ul {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .nav-bar .styles_ul a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 15px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .nav-bar .styles_ul a:hover {
+  color: white;
+  background-color: #28373f;
+}
+.main__container_masterTODO .Container_Cubierta .container_navbar .nav-bar .styles_ul a.active {
+  color: rgb(255, 255, 255);
+  background-color: #28373f;
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi {
+  width: 100%;
+  height: 100vh;
+  max-height: 1000px;
+  background-color: #192229;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal {
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container h2 {
+  font-size: 50px;
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container h2 span {
+  color: rgb(0, 225, 255);
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container p {
+  font-size: 20px;
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .second_container {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2%;
+  align-items: center;
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .second_container h3 {
+  font-weight: 100;
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .second_container h3 span {
+  color: rgb(0, 225, 255);
+}
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .second_container .container_wallpaper {
+  width: 400px;
+  height: 400px;
+  background-image: url(../aaa.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform {
+  width: 100%;
+  height: auto;
+  max-height: auto;
+  background-color: #212E36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .conatiner_skills {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .conatiner_skills h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .conatiner_skills .grap_container {
+  width: 80%;
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  gap: 30px;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .container_aboutMe {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .container_aboutMe .Conatiner_aboutmeImg {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .container_aboutMe .aboutMe {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #212E36;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .container_aboutMe .aboutMe div {
+  padding: 20px;
+  border-radius: 10px;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .container_aboutMe .aboutMe div h3 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+.main__container_masterTODO .Container_Cubierta .Mi__Inform .container_aboutMe .aboutMe div p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.main__container_masterTODO .PortafolioWorks {
+  width: 100%;
+  height: auto;
+  background-color: #192229;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px 0px 100px 0px;
+}
+.main__container_masterTODO .PortafolioWorks .PortafolioWorks__Tittle {
+  font-size: 30px;
+  margin: 40px;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills {
+  width: 300px;
+  height: 430px;
+  background-color: #212E36;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills h3 {
+  margin: 20px;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills div svg:nth-child(2) {
+  color: rgb(23, 224, 177);
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills div svg {
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills div svg:hover {
+  color: black;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .__containerSkillsWallpaper {
+  width: 100%;
+  height: 100%;
+  background-color: rebeccapurple;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .__containerSkillsWallpaper.local1,
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .__containerSkillsWallpaper.local2,
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .__containerSkillsWallpaper.local3,
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .__containerSkillsWallpaper.local4 {
+  width: 100%;
+  height: 100%;
+  background-color: rebeccapurple;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .local1 {
+  background-image: url(../assets/img/local1.PNG);
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .local2 {
+  background-image: url(../assets/img/local2.PNG);
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .local3 {
+  background-image: url(../assets/img/local3.PNG);
+}
+.main__container_masterTODO .PortafolioWorks .container_portafolioWorks .container_portafolioWorks_grap .__containerSkills .local4 {
+  background-image: url(../assets/img/local4.PNG);
+}
+.main__container_masterTODO .Portafolio {
+  width: 100%;
+  height: 100vh;
+  max-height: 1000px;
+  background-color: #192229;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container_masterTODO .Portafolio .clyppi {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-image: url(../assets/img/planeta-poligonal-low-poly_2560x1440_xtrafondos.com-removebg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container_masterTODO .Portafolio .clyppi .information__container {
+  width: 400px;
+  height: 500px;
+}
+.main__container_masterTODO .container__footerMY {
+  width: 100%;
+  height: 20vh;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container_masterTODO .container__footerMY .footer_unik {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__container_masterTODO .container__footerMY .footer_unik .svg_styles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main__container_masterTODO .container__footerMY .footer_unik .svg_styles svg {
+  color: white;
+}
+.main__container_masterTODO .container__footerMY .footer_unik h4 {
+  font-size: 30px;
+}
+.main__container_masterTODO .container__footerMY .footer_unik h3 span {
+  color: aqua;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 1100px) {
+  /* Tus estilos para pantallas de 1000px o más */
+  .main__container_masterTODO .Container_Cubierta .container_navbar .navbar .bars {
+    display: flex;
+  }
+  .main__container_masterTODO .Container_Cubierta .container_navbar .navbar .nav_seconds {
+    display: none;
+  }
+  .main__container_masterTODO .Container_Cubierta .container_navbar .navbar .nav-bar {
+    z-index: 99;
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #1e282f;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .main__container_masterTODO .Container_Cubierta .container_navbar .navbar .nav-bar.active {
+    z-index: 99;
+    height: 450px;
+  }
+  .main__container_masterTODO .Container_Cubierta .container_navbar .navbar .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .main__container_masterTODO .Container_Cubierta .container_navbar .navbar .nav-bar ul.active {
+    opacity: 1;
+  }
+  .main__container_masterTODO .Container_Cubierta .container_navbar .navbar .nav-bar ul a {
+    margin-bottom: 20px;
+  }
+  .main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container {
+    width: 100%;
+  }
+  .main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container h2 {
+    font-size: 30px;
+  }
+  .main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .second_container {
+    width: 80%;
+  }
+  .main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .second_container h3 {
+    display: none;
+  }
+  .main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .second_container .container_wallpaper {
+    width: 300px;
+    height: 300px;
+  }
+  .main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .second_container h2 {
+    font-size: 20px;
+  }
+  .main__container_masterTODO .Container_Cubierta .container__footerMY .footer_unik h4 {
+    font-size: 17px;
+  }
+  .main__container_masterTODO .Container_Cubierta .container__footerMY h3 {
+    font-size: 12px;
+  }
+}
+/* Agrega más estilos según tus necesidades */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container .typewriter .paper {
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+}
+
+.main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container .typewriter .paper #text {
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 6s steps(60, end);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main__container_masterTODO .Container_Cubierta .sobre_Mi .div_principal .firt_container .typewriter .paper #text {
+        font-size: 30px;
+    }
+}
