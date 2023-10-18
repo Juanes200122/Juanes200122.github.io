@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+:root {
+  --main-color: #1083D6;
+  --title-color: #2A3B47;
+  --text-color: #697477;
+  --light-text-color: #A0A7AC;
+  --border-color: #EFF3F5;
+  --container-color: #FFFFFF;
+  --body-color: #FBFBFE;
+}
+
+body.dark-theme {
+  --main-color: #52A5E0;
+  --title-color: #EFF3F5;
+  --text-color: #C8CDD0;
+  --light-text-color: #A0A7AC;
+  --border-color: #2A3B47;
+  --container-color: #212E36;
+  --body-color: #192229;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/peakpx.jpg);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #02012b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+h2,
+h3,
+h4,
+p,
+svg,
+span {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.principal__main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.principal__main .container__todo {
+  width: 100%;
+  max-width: 2000px;
+  height: auto;
+}
+.principal__main .container__todo .section__principal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.principal__main .container__todo .section__principal .section_container__unico {
+  width: 100%;
+  height: 100vh;
+  max-height: 2000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.principal__main .container__todo .section__principal .section_container__unico .navbar__nav {
+  width: 100%;
+  height: 60px;
+  background-image: url(../image/peakpx.jpg);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.principal__main .container__todo .section__principal .section_container__unico .navbar__nav nav {
+  width: 100%;
+  height: 60px;
+  background-image: url(../image/peakpx.jpg);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 1000000;
+}
+.principal__main .container__todo .section__principal .section_container__unico .tittle__containerP {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.principal__main .container__todo .section__principal .section_container__unico .SCROLL {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.principal__main .container__todo .section__principal .section_container__unico .SCROLL span {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(121, 121, 121, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.principal__main .container__todo .section__fade,
+.principal__main .container__todo .section__flip,
+.principal__main .container__todo .section__zoom,
+.principal__main .container__todo .section__examples,
+.principal__main .container__todo .section__placement {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.principal__main .container__todo .section__fade .div__hr,
+.principal__main .container__todo .section__flip .div__hr,
+.principal__main .container__todo .section__zoom .div__hr,
+.principal__main .container__todo .section__examples .div__hr,
+.principal__main .container__todo .section__placement .div__hr {
+  width: 80%;
+  text-align: center;
+}
+.principal__main .container__todo .section__fade div,
+.principal__main .container__todo .section__flip div,
+.principal__main .container__todo .section__zoom div,
+.principal__main .container__todo .section__examples div,
+.principal__main .container__todo .section__placement div {
+  width: 80%;
+}
+.principal__main .container__todo .section__fade div .container__animation,
+.principal__main .container__todo .section__flip div .container__animation,
+.principal__main .container__todo .section__zoom div .container__animation,
+.principal__main .container__todo .section__examples div .container__animation,
+.principal__main .container__todo .section__placement div .container__animation {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  background-color: rgba(43, 51, 68, 0.9);
+  clear: both;
+  margin: 12vh 0;
+  padding: 10px;
+  border: 10px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow-x: auto;
+}
+.principal__main .container__todo .section__fade div .container__animation .copyButton,
+.principal__main .container__todo .section__flip div .container__animation .copyButton,
+.principal__main .container__todo .section__zoom div .container__animation .copyButton,
+.principal__main .container__todo .section__examples div .container__animation .copyButton,
+.principal__main .container__todo .section__placement div .container__animation .copyButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+  border: none;
+  cursor: pointer;
+  z-index: 55;
+  background-color: transparent;
+}
+.principal__main .container__todo .section__fade div .container__animation .copyButton:hover::after,
+.principal__main .container__todo .section__flip div .container__animation .copyButton:hover::after,
+.principal__main .container__todo .section__zoom div .container__animation .copyButton:hover::after,
+.principal__main .container__todo .section__examples div .container__animation .copyButton:hover::after,
+.principal__main .container__todo .section__placement div .container__animation .copyButton:hover::after {
+  content: "Copiar";
+  font-weight: bold;
+  background-color: rgba(114, 128, 157, 0.9);
+  position: absolute;
+  padding: 1px;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  transform: translateY(-20px);
+}
+.principal__main .container__todo .section__fade div .container__animation .code,
+.principal__main .container__todo .section__flip div .container__animation .code,
+.principal__main .container__todo .section__zoom div .container__animation .code,
+.principal__main .container__todo .section__examples div .container__animation .code,
+.principal__main .container__todo .section__placement div .container__animation .code {
+  width: 100%;
+  height: auto;
+  font-family: monospace;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.principal__main .container__todo .section__fade div .container__animation .code .xml,
+.principal__main .container__todo .section__flip div .container__animation .code .xml,
+.principal__main .container__todo .section__zoom div .container__animation .code .xml,
+.principal__main .container__todo .section__examples div .container__animation .code .xml,
+.principal__main .container__todo .section__placement div .container__animation .code .xml {
+  color: #22a2c9;
+}
+.principal__main .container__todo .section__fade div .container__animation .code .attribute,
+.principal__main .container__todo .section__flip div .container__animation .code .attribute,
+.principal__main .container__todo .section__zoom div .container__animation .code .attribute,
+.principal__main .container__todo .section__examples div .container__animation .code .attribute,
+.principal__main .container__todo .section__placement div .container__animation .code .attribute {
+  color: lightskyblue;
+}
+.principal__main .container__todo .section__fade div .container__animation .code .attribute__space,
+.principal__main .container__todo .section__flip div .container__animation .code .attribute__space,
+.principal__main .container__todo .section__zoom div .container__animation .code .attribute__space,
+.principal__main .container__todo .section__examples div .container__animation .code .attribute__space,
+.principal__main .container__todo .section__placement div .container__animation .code .attribute__space {
+  margin-left: 10px;
+}
+.principal__main .container__todo .section__fade div .container__animation .code .atribute__cons,
+.principal__main .container__todo .section__flip div .container__animation .code .atribute__cons,
+.principal__main .container__todo .section__zoom div .container__animation .code .atribute__cons,
+.principal__main .container__todo .section__examples div .container__animation .code .atribute__cons,
+.principal__main .container__todo .section__placement div .container__animation .code .atribute__cons {
+  color: darkorange;
+}
+.principal__main .container__todo footer {
+  width: 100%;
+  background-color: #02012b;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.principal__main .container__todo footer .container__getIT {
+  width: 90%;
+  padding: 30px;
+}
+.principal__main .container__todo footer .container__getIT .container__install p,
+.principal__main .container__todo footer .container__getIT .container__CDN p,
+.principal__main .container__todo footer .container__getIT .container__innitialize p {
+  width: 100%;
+  background-color: rgba(7, 37, 66, 0.733);
+  height: 60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.principal__main .container__todo footer .container__getIT .container__install h4,
+.principal__main .container__todo footer .container__getIT .container__CDN h4,
+.principal__main .container__todo footer .container__getIT .container__innitialize h4 {
+  color: rgb(157, 157, 157);
+}
+.principal__main .container__todo footer .container__getIT .container__install .CDN__CSS:after,
+.principal__main .container__todo footer .container__getIT .container__CDN .CDN__CSS:after,
+.principal__main .container__todo footer .container__getIT .container__innitialize .CDN__CSS:after {
+  content: ' <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> ';
+}
+.principal__main .container__todo footer .container__getIT .container__install .CDN_JS:after,
+.principal__main .container__todo footer .container__getIT .container__CDN .CDN_JS:after,
+.principal__main .container__todo footer .container__getIT .container__innitialize .CDN_JS:after {
+  content: ' <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> ';
+}
+.principal__main .container__todo footer .container__getIT .container__install .INITIALIZE__AOS .ssd,
+.principal__main .container__todo footer .container__getIT .container__CDN .INITIALIZE__AOS .ssd,
+.principal__main .container__todo footer .container__getIT .container__innitialize .INITIALIZE__AOS .ssd {
+  color: deepskyblue;
+}
+.principal__main .container__todo footer .container__getIT .container__install .INITIALIZE__AOS .ssd2,
+.principal__main .container__todo footer .container__getIT .container__CDN .INITIALIZE__AOS .ssd2,
+.principal__main .container__todo footer .container__getIT .container__innitialize .INITIALIZE__AOS .ssd2 {
+  color: rgb(15, 93, 120);
+}
+
+@media (max-width: 500px) {
+  .principal__main .container__todo .section__fade div .container__animation .code,
+  .principal__main .container__todo .section__flip div .container__animation .code,
+  .principal__main .container__todo .section__zoom div .container__animation .code {
+    font-size: 12px;
+  }
+  .principal__main .container__todo footer .container__getIT .container__CDN {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .principal__main .container__todo footer .container__getIT .container__install p {
+    font-size: 12px;
+  }
+  .principal__main .container__todo footer .container__getIT .container__CDN {
+    display: none;
+  }
+  .principal__main .container__todo footer .container__getIT .container__innitialize p {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
