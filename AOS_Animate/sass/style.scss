@@ -344,13 +344,19 @@ a {
             }
 
             footer {
+                padding: 20px;
                 .container__getIT {
+                    width: 100%;
+                    padding: 1px;
                     .container__install {
                         p {
-                            font-size: 12px;                            
+                            width: 100%;
+                            font-size: 12px;  
+
                         }
                     }
                     .container__CDN {
+                        width: 100%;
                         display: none;
                     }
                     .container__innitialize {

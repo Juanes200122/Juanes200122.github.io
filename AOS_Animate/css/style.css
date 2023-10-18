@@ -310,10 +310,19 @@ a {
   }
 }
 @media (max-width: 800px) {
+  .principal__main .container__todo footer {
+    padding: 20px;
+  }
+  .principal__main .container__todo footer .container__getIT {
+    width: 100%;
+    padding: 1px;
+  }
   .principal__main .container__todo footer .container__getIT .container__install p {
+    width: 100%;
     font-size: 12px;
   }
   .principal__main .container__todo footer .container__getIT .container__CDN {
+    width: 100%;
     display: none;
   }
   .principal__main .container__todo footer .container__getIT .container__innitialize p {
