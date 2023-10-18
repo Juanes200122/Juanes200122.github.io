@@ -97,14 +97,16 @@ span {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-
-                h2 {
+                
+                a {
                     margin-left: 5%;
-
-                    span {
-                        color: rgb(0, 225, 255);
+                    h2 {
+                        span {
+                            color: rgb(0, 225, 255);
+                        }
                     }
                 }
+
 
                 .bars {
                     width: 40px;
@@ -196,6 +198,10 @@ span {
                     flex-direction: column;
                     justify-content: center;
 
+                    .Margin__p {
+                        margin: 0px 20px 20px 0px;
+                    }
+
                     h2 {
                         font-size: 50px;
 
@@ -269,7 +275,7 @@ span {
                 }
 
                 .grap_container {
-                    width: 80%;
+                    width: 100%;
                     display: flex;
                     height: auto;
                     flex-wrap: wrap;
@@ -286,17 +292,8 @@ span {
                 height: auto;
                 display: flex;
 
-
-                .Conatiner_aboutmeImg {
-                    width: 50%;
-                    height: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
                 .aboutMe {
-                    width: 80%;
+                    width: 100%;
                     height: auto;
                     display: flex;
                     flex-direction: column;
@@ -307,6 +304,9 @@ span {
                         // background-color: $body;
                         padding: 20px;
                         border-radius: 10px;
+                        .Margin__S {
+                            margin-bottom: 20px;
+                        }
 
                         h3 {
                             color: rgb(255, 255, 255);
@@ -334,7 +334,7 @@ span {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: 100px 0px 100px 0px ;
+        margin: 100px 0px 100px 0px;
 
         .PortafolioWorks__Tittle {
             font-size: 30px;
@@ -378,7 +378,7 @@ span {
                         justify-content: center;
                         padding: 20px;
 
-                        svg:nth-child(2) {                            
+                        svg:nth-child(2) {
                             color: rgb(23, 224, 177);
                         }
 
@@ -388,15 +388,15 @@ span {
                             overflow: hidden;
 
                             &:hover {
-                                color: black;
+                                color: rgb(171, 233, 212);
                             }
                         }
                     }
 
-                    .__containerSkillsWallpaper{
+                    .__containerSkillsWallpaper {
                         width: 100%;
                         height: 100%;
-                        background-color: rebeccapurple;
+                        // background-color: rebeccapurple;
                         background-position: center;
                         border-radius: 10px 10px 0px 0px;
                         background-repeat: no-repeat;
@@ -409,21 +409,25 @@ span {
                     .__containerSkillsWallpaper.local4 {
                         width: 100%;
                         height: 100%;
-                        background-color: rebeccapurple;
+                        // background-color: rebeccapurple;
                         background-position: center;
                         border-radius: 10px 10px 0px 0px;
                         background-repeat: no-repeat;
                         background-size: cover;
                     }
+
                     .local1 {
-                        background-image: url(../assets/img/AOS_Animate.PNG);
+                        background-image: url(../assets/img/AOS_Animate__JE.svg);
                     }
+
                     .local2 {
                         background-image: url(../assets/img/local2.PNG);
                     }
+
                     .local3 {
                         background-image: url(../assets/img/local3.PNG);
                     }
+
                     .local4 {
                         background-image: url(../assets/img/local4.PNG);
                     }
@@ -450,7 +454,7 @@ span {
             width: 100%;
             height: 100%;
             border-radius: 5px;
-            background-image: url(../assets/img/planeta-poligonal-low-poly_2560x1440_xtrafondos.com-removebg.png);
+            background-image: url(../assets/img/Planet__Poligonal.svg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -512,18 +516,20 @@ span {
 }
 
 @keyframes progress {
-    0%{
+    0% {
         width: 0;
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
 
-    /* Tus estilos para pantallas de 1000px o más */
+
+    /* Tus estilos para pantallas de 1000px o menos */
     .main__container_masterTODO {
 
         .Container_Cubierta {
@@ -574,12 +580,11 @@ span {
                             }
                         }
                     }
-
                 }
-
             }
 
             .sobre_Mi {
+
                 .div_principal {
                     width: 100%;
                     flex-direction: column-reverse;
@@ -588,8 +593,11 @@ span {
                         width: 100%;
                         // background-color: rebeccapurple;
 
-                        h2 {
-                            font-size: 30px;
+                        .typewriter {
+
+                            .paper {
+                                font-size: 10px;
+                            }
                         }
                     }
 
@@ -627,5 +635,3 @@ span {
         }
     }
 }
-
-/* Agrega más estilos según tus necesidades */
